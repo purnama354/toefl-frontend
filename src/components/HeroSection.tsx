@@ -45,21 +45,21 @@ export default function HeroSection() {
             {/* CTA buttons */}
             <div className="[display:flex] [flex-direction:column] [gap:12px]">
               <div className="[display:flex] [flex-wrap:wrap] [gap:12px] max-[500px]:[flex-direction:column]">
-                <a href="#pricing" className="[display:inline-flex] [align-items:center] [justify-content:center] [gap:8px] [font-weight:700] [border-radius:16px] [padding:14px_28px] [font-size:16px] [color:#fff] [background:#D70808] [box-shadow:0_4px_20px_rgba(215,8,8,0.35)] [text-decoration:none] max-[500px]:[font-size:clamp(12px,3.6vw,16px)] max-[500px]:[padding:clamp(10px,3vw,14px)_clamp(16px,5vw,28px)] max-[500px]:[width:100%] max-[500px]:[box-sizing:border-box]">
+                <a href="#pricing" className="[display:inline-flex] [align-items:center] [justify-content:center] [gap:8px] [font-weight:800] [border-radius:12px] [padding:16px_32px] [font-size:17px] [color:#fff] [background:#D70808] [box-shadow:0_4px_16px_rgba(215,8,8,0.4)] [text-decoration:none] [transition:transform_0.2s,box-shadow_0.2s] hover:[transform:translateY(-2px)] hover:[box-shadow:0_6px_24px_rgba(215,8,8,0.5)] max-[500px]:[font-size:clamp(14px,4vw,17px)] max-[500px]:[padding:clamp(12px,3.5vw,16px)_clamp(20px,5.5vw,32px)] max-[500px]:[width:100%] max-[500px]:[box-sizing:border-box]">
                   Mulai Persiapan TOEFL →
                 </a>
-                <a href="#testimonials" className="[display:inline-flex] [align-items:center] [justify-content-center] [gap:8px] [font-weight:700] [border-radius:16px] [padding:14px_28px] [font-size:16px] [color:#151515] [border:2px_solid_#D70808] [text-decoration:none] max-[500px]:[font-size:clamp(12px,3.6vw,16px)] max-[500px]:[padding:clamp(10px,3vw,14px)_clamp(16px,5vw,28px)] max-[500px]:[width:100%] max-[500px]:[box-sizing:border-box]">
+                <a href="#testimonials" className="[display:inline-flex] [align-items:center] [justify-content:center] [gap:8px] [font-weight:800] [border-radius:12px] [padding:16px_32px] [font-size:17px] [color:#D70808] [background:#fff] [border:2px_solid_#D70808] [text-decoration:none] [transition:transform_0.2s,box-shadow_0.2s] hover:[transform:translateY(-2px)] hover:[box-shadow:0_4px_16px_rgba(215,8,8,0.2)] max-[500px]:[font-size:clamp(14px,4vw,17px)] max-[500px]:[padding:clamp(12px,3.5vw,16px)_clamp(20px,5.5vw,32px)] max-[500px]:[width:100%] max-[500px]:[box-sizing:border-box]">
                   Lihat Bukti Alumni →
                 </a>
               </div>
               <div className="[display:flex] [align-items:center] [justify-content:flex-start] [flex-wrap:wrap] [gap:10px_14px]">
-                <span className="[display:flex] [align-items:center] [gap:5px] [font-size:13px] [font-weight:400] [color:#6b7280] max-[500px]:[font-size:clamp(10px,2.6vw,13px)]">
-                  ★★★★★ <span className="[margin-left:5px] max-[500px]:[font-size:clamp(10px,2.6vw,13px)]">4.9/5 Google Review</span>
+                <span className="[display:flex] [align-items:center] [gap:5px] [font-size:13px] [font-weight:500] [color:#4b5563] max-[500px]:[font-size:clamp(11px,2.8vw,13px)]">
+                  ★★★★★ <span className="[margin-left:5px] max-[500px]:[font-size:clamp(11px,2.8vw,13px)]">4.9/5 Google Review</span>
                 </span>
-                <span className="[font-size:13px] [color:#6b7280] max-[500px]:[font-size:clamp(10px,2.6vw,13px)]">•</span>
-                <span className="[font-size:13px] [font-weight:400] [color:#6b7280] max-[500px]:[font-size:clamp(10px,2.6vw,13px)]">45.000+ Alumni Sukses</span>
-                <span className="[font-size:13px] [color:#6b7280] max-[500px]:[font-size:clamp(10px,2.6vw,13px)]">•</span>
-                <span className="[font-size:13px] [font-weight:400] [color:#6b7280] max-[500px]:[font-size:clamp(10px,2.6vw,13px)]">🛡 Garansi 100%</span>
+                <span className="[font-size:13px] [color:#9ca3af] max-[500px]:[font-size:clamp(11px,2.8vw,13px)]">•</span>
+                <span className="[font-size:13px] [font-weight:500] [color:#4b5563] max-[500px]:[font-size:clamp(11px,2.8vw,13px)]">45.000+ Alumni Sukses</span>
+                <span className="[font-size:13px] [color:#9ca3af] max-[500px]:[font-size:clamp(11px,2.8vw,13px)]">•</span>
+                <span className="[font-size:13px] [font-weight:500] [color:#4b5563] max-[500px]:[font-size:clamp(11px,2.8vw,13px)]">🛡 Garansi 100%</span>
               </div>
             </div>
           </div>
