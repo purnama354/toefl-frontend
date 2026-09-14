@@ -54,12 +54,12 @@ export default function LandingPage() {
   const [reviewIdx, setReviewIdx] = useState<number | null>(null);
 
   // Refs
-  const bannerRef = useRef<HTMLDivElement>(null);
+  const bannerRef = useRef<HTMLAnchorElement>(null);
 
   // Hooks
   const { countdown, flashVisible } = useFlashCountdown();
   const scrolled = useScrolled();
-  const bannerH = useBannerHeight(bannerRef, [flashVisible]);
+  const bannerH = useBannerHeight(bannerRef as any, [flashVisible]);
   const { waBubbleOpen, dismissWaBubble } = useWaBubble();
   const { rpOpen, closeReturnPopup, markCheckoutClicked } = useReturnPopup();
 
@@ -87,10 +87,9 @@ export default function LandingPage() {
             bannerRef={bannerRef}
             countdown={countdown}
             flashVisible={flashVisible}
-            onClose={() => { /* handled inside the hook */ }}
           />
         )}
-        <Navbar scrolled={scrolled} bannerH={bannerH} />
+        <Navbar scrolled={scrolled} />
 
         {/* ── Page sections ── */}
         <HeroSection />

@@ -71,58 +71,58 @@ function FeatureCard({ feature }: { feature: FeatureItem }) {
 
 export default function FeaturesSection() {
   return (
-    <section id="lms" className="[background:#fff] [padding:210px_24px_190px]">
+    <section id="lms" className="[background:#F9F9F9] [padding:100px_24px_80px]">
       <div className="[max-width:1152px] [margin:0_auto]">
         {/* Header */}
-        <div className="[text-align:center] [margin-bottom:48px]">
-          <div className="[display:inline-flex] [align-items:center] [gap:8px] [font-size:12px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.08em] [padding:6px_16px] [border-radius:9999px] [margin-bottom:20px] [background:#FFF0F0] [color:#D70808] [border:1px_solid_#ffb3b3]">
+        <div className="[text-align:center] [margin-bottom:56px]">
+          <div className="[display:inline-flex] [align-items:center] [gap:8px] [font-size:13px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.08em] [padding:7px_18px] [border-radius:9999px] [margin-bottom:22px] [background:#FFF0F0] [color:#D70808] [border:1.5px_solid_#ffb3b3]">
             💻 Tampilan LMS
           </div>
-          <h2 className="[margin:0_0_16px] [font-size:clamp(24px,3vw,36px)] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">
+          <h2 className="[margin:0_0_18px] [font-size:clamp(28px,3.5vw,40px)] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">
             Intip Langsung <span className="[color:#D70808]">Platform Belajarnya</span>
           </h2>
-          <p className="[margin:0] [font-size:16px] [max-width:560px] [margin-left:auto] [margin-right:auto] [line-height:1.6] [color:#3d3d3d]">
+          <p className="[margin:0] [font-size:17px] [max-width:600px] [margin-left:auto] [margin-right:auto] [line-height:1.7] [color:#3d3d3d]">
             Semua yang kamu butuhkan untuk mengetahui kelemahan, belajar, berlatih, dan menghadapi ujian.
           </p>
         </div>
 
         {/* Video tour placeholder */}
-        <div className="[max-width:840px] [margin:0_auto_44px]">
-          <div className="[position:relative] [border-radius:20px] [overflow:hidden] [background:#151515] [border:1px_solid_#e5e5e5] [box-shadow:0_8px_32px_rgba(0,0,0,0.12)] [aspect-ratio:16/9]">
-            <div className="[position:absolute] [inset:0] [display:flex] [flex-direction:column] [align-items:center] [justify-content:center] [gap:14px] [background:repeating-linear-gradient(135deg,#1c1c1c_0,#1c1c1c_14px,#191919_14px,#191919_28px)]">
-              <span className="[display:flex] [align-items:center] [justify-content:center] [width:66px] [height:66px] [border-radius:9999px] [background:#D70808] [box-shadow:0_8px_26px_rgba(215,8,8,0.45)]">
-                <span className="[display:block] [width:0] [height:0] [margin-left:5px] [border-style:solid] [border-width:13px_0_13px_21px] [border-color:transparent_transparent_transparent_#fff]" />
+        <div className="[max-width:900px] [margin:0_auto_50px]">
+          <div className="[position:relative] [border-radius:20px] [overflow:hidden] [background:#151515] [border:1px_solid_#e5e5e5] [box-shadow:0_10px_40px_rgba(0,0,0,0.15)] [aspect-ratio:16/9]">
+            <div className="[position:absolute] [inset:0] [display:flex] [flex-direction:column] [align-items:center] [justify-content:center] [gap:16px] [background:repeating-linear-gradient(135deg,#1c1c1c_0,#1c1c1c_14px,#191919_14px,#191919_28px)]">
+              <span className="[display:flex] [align-items:center] [justify-content:center] [width:72px] [height:72px] [border-radius:9999px] [background:#D70808] [box-shadow:0_10px_30px_rgba(215,8,8,0.5)]">
+                <span className="[display:block] [width:0] [height:0] [margin-left:6px] [border-style:solid] [border-width:14px_0_14px_24px] [border-color:transparent_transparent_transparent_#fff]" />
               </span>
-              <p className="[margin:0] [font-size:14px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#fff]">Video Tour LMS</p>
+              <p className="[margin:0] [font-size:15px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#fff]">Video Tour LMS</p>
             </div>
-            <div className="[position:absolute] [left:14px] [top:14px] [display:flex] [align-items:center] [gap:7px] [border-radius:9999px] [background:rgba(0,0,0,0.55)] [padding:7px_13px] [pointer-events:none]">
-              <span className="[display:block] [width:7px] [height:7px] [border-radius:9999px] [background:#D70808]" />
-              <span className="[font-size:11px] [font-weight:900] [letter-spacing:0.08em] [text-transform:uppercase] [color:#fff]">Showcase</span>
+            <div className="[position:absolute] [left:16px] [top:16px] [display:flex] [align-items:center] [gap:8px] [border-radius:9999px] [background:rgba(0,0,0,0.6)] [padding:8px_14px] [pointer-events:none]">
+              <span className="[display:block] [width:8px] [height:8px] [border-radius:9999px] [background:#D70808]" />
+              <span className="[font-size:12px] [font-weight:900] [letter-spacing:0.08em] [text-transform:uppercase] [color:#fff]">Showcase</span>
             </div>
           </div>
         </div>
 
         {/* Feature cards */}
-        <div className="[display:flex] [flex-direction:column] [gap:20px] [max-width:1040px] [margin:0_auto_40px]">
+        <div className="[display:flex] [flex-direction:column] [gap:24px] [max-width:1080px] [margin:0_auto_48px]">
           {LMS_FEATURES.map((feature) => (
             <FeatureCard key={feature.id} feature={feature} />
           ))}
         </div>
 
         {/* Total value summary */}
-        <div className="[max-width:520px] [margin:0_auto] [background:#F9F9F9] [border-radius:20px] [padding:24px_28px] [border:1px_solid_#ececec]">
-          <p className="[margin:0_0_16px] [font-size:12px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.06em] [color:#6b7280]">
+        <div className="[max-width:560px] [margin:0_auto] [background:#fff] [border-radius:22px] [padding:28px_32px] [border:1.5px_solid_#ececec] [box-shadow:0_6px_28px_rgba(0,0,0,0.08)]">
+          <p className="[margin:0_0_18px] [font-size:13px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.06em] [color:#6b7280]">
             Total Nilai Program
           </p>
-          <div className="[display:flex] [justify-content:space-between] [align-items:center] [margin-bottom:8px]">
-            <span className="[font-size:14px] [font-weight:600] [color:#3d3d3d]">Nilai semua fitur di atas</span>
-            <span className="[font-size:16px] [font-weight:900] [text-decoration:line-through] [color:#9ca3af]">{FEATURES_TOTAL_VALUE}</span>
+          <div className="[display:flex] [justify-content:space-between] [align-items:center] [margin-bottom:10px]">
+            <span className="[font-size:15px] [font-weight:600] [color:#3d3d3d]">Nilai semua fitur di atas</span>
+            <span className="[font-size:17px] [font-weight:900] [text-decoration:line-through] [color:#9ca3af]">{FEATURES_TOTAL_VALUE}</span>
           </div>
-          <div className="[display:flex] [justify-content:space-between] [align-items:center] [padding:12px_0] [border-top:1px_solid_#ececec] [border-bottom:1px_solid_#ececec] [margin-bottom:16px]">
-            <span className="[font-size:15px] [font-weight:800] [color:#151515]">Harga flash sale bulan ini</span>
-            <span className="[font-size:22px] [font-weight:900] [color:#D70808]">mulai {FEATURES_START_PRICE}</span>
+          <div className="[display:flex] [justify-content:space-between] [align-items:center] [padding:14px_0] [border-top:1.5px_solid_#ececec] [border-bottom:1.5px_solid_#ececec] [margin-bottom:18px]">
+            <span className="[font-size:16px] [font-weight:800] [color:#151515]">Harga flash sale bulan ini</span>
+            <span className="[font-size:24px] [font-weight:900] [color:#D70808]">mulai {FEATURES_START_PRICE}</span>
           </div>
-          <a href="#pricing" className="[display:flex] [align-items:center] [justify-content:center] [gap:8px] [width:100%] [font-size:15px] [font-weight:800] [color:#fff] [background:#D70808] [border-radius:14px] [padding:14px] [text-decoration:none] [box-sizing:border-box] [box-shadow:0_4px_16px_rgba(215,8,8,0.3)]">
+          <a href="#pricing" className="[display:flex] [align-items:center] [justify-content:center] [gap:8px] [width:100%] [font-size:16px] [font-weight:800] [color:#fff] [background:#D70808] [border-radius:16px] [padding:16px] [text-decoration:none] [box-sizing:border-box] [box-shadow:0_6px_20px_rgba(215,8,8,0.35)]">
             Lihat Paket Harga →
           </a>
         </div>

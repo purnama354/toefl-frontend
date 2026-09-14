@@ -1,50 +1,43 @@
-import { css, navStyle } from '../constants/styles';
-import { LP_CONFIG, waUrl } from '../constants/data';
+import { LP_CONFIG } from '../constants/data';
 
 interface NavbarProps {
   scrolled: boolean;
-  bannerH: number;
 }
 
-const WA_MSG = 'Halo Admin Full Bright Indonesia. Saya lihat iklan. Submission beasiswa luar negeri saya butuh skor TOEFL, saya minat daftar kelas.';
-
-export default function Navbar({ scrolled, bannerH }: NavbarProps) {
+export default function Navbar({ scrolled }: NavbarProps) {
   return (
-    <nav style={css(navStyle(scrolled, bannerH))}>
-      <div className="[max-width:1152px] [margin:0_auto] [padding:0_20px] [display:flex] [align-items:center] [justify-content:space-between] [height:64px]">
+    <header className={`[border-bottom:1px_solid_#f3f4f6] [transition:all_0.3s] ${scrolled ? `[background:rgba(255,255,255,0.95)] [box-shadow:0_4px_12px_rgba(0,0,0,0.08)] [backdrop-filter:blur(8px)]` : `[background:#fff] [box-shadow:0_1px_3px_rgba(0,0,0,0.05)]`}`}>
+      <div className="[max-width:1152px] [margin:0_auto] [height:64px] [display:flex] [align-items:center] [justify-content:space-between] [padding:0_24px]">
         {/* Logo */}
-        <a href="/" aria-label="Full Bright Indonesia">
+        <a href="#" className="[display:flex] [align-items:center] [text-decoration:none]">
           <img
             src={LP_CONFIG.logoUrl}
             alt="Full Bright Indonesia"
-            className="[height:36px] [width:auto] [object-fit:contain]"
+            className="[height:auto] [width:160px] [object-fit:contain]"
           />
         </a>
 
-        {/* Desktop Nav Links */}
-        <div className="hidden min-[640px]:flex [align-items:center] [gap:24px]">
-          <a href="#value" className="[font-size:14px] [font-weight:600] [color:#3d3d3d] [text-decoration:none]">
-            Program
-          </a>
-          <a href="#testimonials" className="[font-size:14px] [font-weight:600] [color:#3d3d3d] [text-decoration:none]">
-            Testimoni
-          </a>
-          <a href="#pricing" className="[font-size:14px] [font-weight:600] [color:#3d3d3d] [text-decoration:none]">
-            Harga
-          </a>
-        </div>
-
-        {/* CTA */}
+        {/* CTA Button */}
         <a
-          href={waUrl(WA_MSG)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="[display:inline-flex] [align-items:center] [gap:6px] [font-size:13px] [font-weight:800] [color:#fff] [background:#D70808] [border-radius:9999px] [padding:9px_18px] [text-decoration:none] [white-space:nowrap] [box-shadow:0_4px_14px_rgba(215,8,8,0.28)]"
+          href="#pricing"
+          className="[display:flex] [flex-direction:column] [justify-content:center] [gap:1px] [border-radius:9999px] [background:#D70808] [box-shadow:0_6px_16px_rgba(215,8,8,0.35)] [text-decoration:none] [padding:7px_16px]"
         >
-          <span>Daftar Sekarang</span>
-          <span className="[font-size:11px]">→</span>
+          <span className="[font-size:13px] [font-weight:800] [color:#fff] [white-space:nowrap] [line-height:1.2]">
+            🎓 Amankan Seat
+          </span>
+          <span className="[display:flex] [align-items:center] [gap:5px]">
+            <span className="[font-size:11px] [text-decoration:line-through] [color:rgba(255,255,255,0.92)] [white-space:nowrap]">
+              Rp250rb
+            </span>
+            <span className="[font-size:14px] [font-weight:900] [color:#fff] [white-space:nowrap]">
+              Rp99rb
+            </span>
+            <span className="[background:#F59E0B] [color:#151515] [font-size:10px] [font-weight:900] [padding:2px_7px] [border-radius:9999px] [white-space:nowrap]">
+              -60%
+            </span>
+          </span>
         </a>
       </div>
-    </nav>
+    </header>
   );
 }
